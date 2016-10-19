@@ -1,8 +1,22 @@
-# BourbonHouse
+# BourbonHouse [![Gem Version](https://badge.fury.io/rb/bourbon_house.svg)](https://badge.fury.io/rb/bourbon_house)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bourbon_house`. To experiment with that code, run `bin/console` for an interactive prompt.
+```
+やあ (´・ω・｀)
 
-TODO: Delete this and the text above, and describe your gem
+ようこそ、バーボンハウスへ。
+このテキーラはサービスだから、まず飲んで落ち着いて欲しい。
+
+うん、「また」なんだ。済まない。
+仏の顔もって言うしね、謝って許してもらおうとも思っていない。
+
+でも、この README を見たとき、君は、きっと言葉では言い表せない
+「ときめき」みたいなものを感じてくれたと思う。
+
+殺伐とした世の中で、そういう気持ちを忘れないで欲しい
+そう思って、この Gem を作ったんだ。
+
+じゃあ、注文を聞こうか。
+```
 
 ## Installation
 
@@ -38,4 +52,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ojiry/
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
