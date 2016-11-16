@@ -1,4 +1,4 @@
-# BourbonHouse [![Gem Version](https://badge.fury.io/rb/bourbon_house.svg)](https://badge.fury.io/rb/bourbon_house)
+# BourbonHouse [![Gem Version](https://badge.fury.io/rb/bourbon_house.svg)](https://badge.fury.io/rb/bourbon_house) [![Build Status](https://travis-ci.org/ojiry/bourbon_house.svg?branch=master)](https://travis-ci.org/ojiry/bourbon_house)
 
 ```
 やあ (´・ω・｀)
