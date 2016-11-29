@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 describe BourbonHouse::Bartender do
   describe ".message" do
     subject { BourbonHouse::Bartender.message }

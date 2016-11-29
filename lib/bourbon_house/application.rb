@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module BourbonHouse
   class Application
     def call(env)
