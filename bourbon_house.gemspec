@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rack", "~> 2.0"
 
   spec.add_development_dependency "bundler", "~> 1.13"
-  spec.add_development_dependency "otacop", "~> 0.3"
+  spec.add_development_dependency "otacop", "~> 0.4"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
