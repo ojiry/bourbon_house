@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 module BourbonHouse
   class Railtie < Rails::Railtie
-    initializer "bourbon_house.configure_rails_initialization" do |app|
+    initializer :bourbon_house do |app|
       app.middleware.use BourbonHouse::Middleware
     end
   end
