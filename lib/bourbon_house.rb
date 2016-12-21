@@ -1,6 +1,4 @@
 # frozen_string_literal: true
-require "bourbon_house/version"
-
 require "bourbon_house/config"
 require "bourbon_house/application"
 require "bourbon_house/bartender"
