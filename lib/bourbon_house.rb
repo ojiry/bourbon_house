@@ -17,4 +17,3 @@ require "bourbon_house/middleware"
 if defined? ::Rails::Railtie
   require "bourbon_house/railtie"
 end
-
