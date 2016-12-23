@@ -14,6 +14,4 @@ require "bourbon_house/bartender"
 require "bourbon_house/server"
 require "bourbon_house/middleware"
 
-if defined? ::Rails::Railtie
-  require "bourbon_house/railtie"
-end
+require "bourbon_house/railtie" if defined? ::Rails::Railtie
