@@ -2,12 +2,6 @@
 module BourbonHouse
 end
 
-begin
-  require "rails"
-rescue LoadError
-  # noop
-end
-
 require "bourbon_house/config"
 require "bourbon_house/application"
 require "bourbon_house/bartender"
