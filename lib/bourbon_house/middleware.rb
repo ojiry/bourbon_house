@@ -10,7 +10,7 @@ module BourbonHouse
 
       return bh_app.call(env) if BourbonHouse.config.force
 
-      if rand(10).zero?
+      if rand(10).zero? && env['REQUEST_METHOD'] == 'GET'
         bh_app.call(env)
       else
         @app.call(env)
