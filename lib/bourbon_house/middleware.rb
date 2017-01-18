@@ -6,15 +6,28 @@ module BourbonHouse
     end
 
     def call(env)
-      bh_app = BourbonHouse::Application.new
+      return @app.call(env) unless enabled?
 
-      return bh_app.call(env) if BourbonHouse.config.force
+      return bourbon_house_app.call(env) if force?
 
       if rand(10).zero? && env['REQUEST_METHOD'] == 'GET'
-        bh_app.call(env)
+        bourbon_house_app.call(env)
       else
         @app.call(env)
       end
     end
+
+    private
+      def bourbon_house_app
+        BourbonHouse::Application.new
+      end
+
+      def enabled?
+        !!BourbonHouse.config.enabled
+      end
+
+      def force?
+        !!BourbonHouse.config.force
+      end
   end
 end
