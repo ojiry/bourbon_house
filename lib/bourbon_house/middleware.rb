@@ -6,11 +6,15 @@ module BourbonHouse
     end
 
     def call(env)
-      @app.call(env)
+      bh_app = BourbonHouse::Application.new
 
-      html = BourbonHouse::Bartender.message
+      return bh_app.call(env) if BourbonHouse.config.force
 
-      [200, { 'Content-Type' => 'text/plain' }, [html]]
+      if rand(10).zero?
+        bh_app.call(env)
+      else
+        @app.call(env)
+      end
     end
   end
 end
