@@ -7,5 +7,6 @@ module BourbonHouse
   config.instance_eval do
     self.enabled = true
     self.force = false
+    self.allow_methods = %i(get)
   end
 end
