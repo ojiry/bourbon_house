@@ -38,7 +38,7 @@ Or install it yourself as:
 
 ### Use with bourbon_house only
 
-```
+```sh
 $ bourbon_house
 [2017-02-21 19:54:06] INFO  WEBrick 1.3.1
 [2017-02-21 19:54:06] INFO  ruby 2.5.0 (2017-01-13) [x86_64-darwin16]
@@ -62,7 +62,7 @@ $ curl localhost:9292
 
 ### Use with Rails
 
-```
+```sh
 $ echo "gem 'bourbon_house', group: :development" >> Gemfile
 $ bundle install
 $ bin/rails g bourbon_house:config
