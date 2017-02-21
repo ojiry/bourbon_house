@@ -36,7 +36,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Use with bourbon_house only
+
+```
+$ bourbon_house
+[2017-02-21 19:54:06] INFO  WEBrick 1.3.1
+[2017-02-21 19:54:06] INFO  ruby 2.5.0 (2017-01-13) [x86_64-darwin16]
+[2017-02-21 19:54:06] INFO  WEBrick::HTTPServer#start: pid=35483 port=9292
+
+$ curl localhost:9292
+やあ （´・ω・｀)
+ようこそ、バーボンハウスへ。
+このテキーラはサービスだから、まず飲んで落ち着いて欲しい。
+
+うん、「また」なんだ。済まない。
+仏の顔もって言うしね、謝って許してもらおうとも思っていない。
+
+でも、このレスポンスを見たとき、君は、きっと言葉では言い表せない
+「ときめき」みたいなものを感じてくれたと思う。
+殺伐とした世の中で、そういう気持ちを忘れないで欲しい
+そう思って、このライブラリを作ったんだ。
+
+じゃあ、注文を聞こうか。
+```
+
+### Use with Rails
+
+```
+$ echo "gem 'bourbon_house', group: :development" >> Gemfile
+$ bundle install
+$ bin/rails g bourbon_house:config
+      create  config/initializers/bourbon_house_config.rb
+# Edit bourbon_house_config.rb
+$ bin/rails s
+# Let's bourbon!
+```
 
 ## Development
 
